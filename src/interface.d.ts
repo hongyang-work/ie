@@ -1,6 +1,9 @@
+import { ChangeEvent } from "react";
+
 export interface App {
-    message: string
-    updateMessage: (message: string) => void;
+    style: object
+    filters: Filter[]
+    handleChange: (newFilter: Filter, e: ChangeEvent<HTMLInputElement>) => void
 }
 
 export interface Range {

@@ -2,7 +2,7 @@ const DefaultFilters = [
     {
         name: "Grayscale",
         property: "grayscale",
-        value: 100,
+        value: 0,
         range: {
             min: 0,
             max: 100

@@ -1,10 +1,10 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
+import { AppContext } from "../contexts/image-editor/AppContext";
 
-interface Props {
-    style: object
-}
+const Image: FC = () => {
 
-const Image: FC<Props> = ({ style }) => {
+    const { style } = useContext(AppContext);
+
     return (
         <div className="main-image" style={style}/>
     )

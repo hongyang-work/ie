@@ -1,12 +1,16 @@
-import { FC, ChangeEvent } from "react";
+import { FC, useContext } from "react";
+
+import { AppContext } from "../contexts/image-editor/AppContext";
 import { Filter } from "../interface";
 
 interface Props {
     filter: Filter
-    handleChange: (name: Filter, e: ChangeEvent<HTMLInputElement>) => void
 }
 
-const Slider: FC<Props> = ({ filter, handleChange }) => {
+const Slider: FC<Props> = ({ filter }) => {
+
+    const { handleChange } = useContext(AppContext);
+
     return (
         <div className='slider-container'>
             <label>{filter.name}</label>
@@ -14,6 +18,8 @@ const Slider: FC<Props> = ({ filter, handleChange }) => {
                 type="range"
                 className="slider"
                 value={filter.value}
+                min={filter.range.min}
+                max={filter.range.max}
                 onChange={e => handleChange(filter, e)}
             />
         </div>
