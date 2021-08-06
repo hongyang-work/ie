@@ -4,6 +4,7 @@ import Context from "../../interfaces/Context";
 
 const defaultContext = {
     filters: [],
+    transformers: [],
     handleChange: (): void => {}
 }
 

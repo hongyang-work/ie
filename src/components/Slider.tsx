@@ -1,26 +1,28 @@
 import { FC, useContext } from "react";
 
 import Filter from "../interfaces/Filter";
+import Transformer from "../interfaces/Transformer";
 import { EditorContext } from "../contexts/editor/EditorContext";
 
 interface Props {
-    filter: Filter
+    editor: Filter | Transformer
 }
 
-const Slider: FC<Props> = ({ filter }) => {
+const Slider: FC<Props> = ({ editor }) => {
 
     const { handleChange } = useContext(EditorContext);
 
     return (
         <div className='slider-container'>
-            <label>{filter.name}</label>
+            <label>{editor.name}</label>
             <input
                 type="range"
                 className="slider"
-                value={filter.value}
-                min={filter.range.min}
-                max={filter.range.max}
-                onChange={e => handleChange(filter, e)}
+                value={editor.value}
+                min={editor.range.min}
+                max={editor.range.max}
+                step={editor.step}
+                onChange={e => handleChange(editor, e)}
             />
         </div>
     )

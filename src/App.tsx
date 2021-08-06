@@ -1,7 +1,7 @@
 import './App.css';
 
 import EditorContextProvider from "./contexts/editor/EditorContextProvider";
-import Sliders from "./components/Sliders";
+import Editor from "./components/Editor";
 import Image from "./components/Image";
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
         <EditorContextProvider>
             <div className="container">
                 <Image />
-                <Sliders />
+                <Editor />
             </div>
         </EditorContextProvider>
     );

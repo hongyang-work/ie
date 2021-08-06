@@ -1,9 +1,12 @@
 import { ChangeEvent } from "react";
-import Filter from "./Filter";
+
+import Filter from "../interfaces/Filter";
+import Transformer from "./Transformer";
 
 interface Context {
     filters: Filter[]
-    handleChange: (newFilter: Filter, e: ChangeEvent<HTMLInputElement>) => void
+    transformers: Transformer[]
+    handleChange: (arg: Filter | Transformer, e: ChangeEvent<HTMLInputElement>) => void
 }
 
 export default Context;

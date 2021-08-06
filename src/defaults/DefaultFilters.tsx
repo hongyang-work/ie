@@ -1,4 +1,4 @@
-const Filters = [
+const DefaultFilters = [
     {
         name: 'Brightness',
         property: 'brightness',
@@ -7,7 +7,8 @@ const Filters = [
             min: 0,
             max: 200
         },
-        unit: '%'
+        unit: '%',
+        step: 1
     },
     {
         name: 'Contrast',
@@ -17,7 +18,8 @@ const Filters = [
             min: 0,
             max: 200
         },
-        unit: '%'
+        unit: '%',
+        step: 1
     },
     {
         name: 'Saturation',
@@ -27,7 +29,8 @@ const Filters = [
             min: 0,
             max: 200
         },
-        unit: '%'
+        unit: '%',
+        step: 1
     },
     {
         name: "Grayscale",
@@ -37,7 +40,8 @@ const Filters = [
             min: 0,
             max: 100
         },
-        unit: "%"
+        unit: "%",
+        step: 1
     },
     {
         name: 'Sepia',
@@ -47,7 +51,8 @@ const Filters = [
             min: 0,
             max: 100
         },
-        unit: '%'
+        unit: '%',
+        step: 1
     },
     {
         name: 'Hue Rotate',
@@ -57,7 +62,8 @@ const Filters = [
             min: 0,
             max: 360
         },
-        unit: 'deg'
+        unit: 'deg',
+        step: 1
     },
     {
         name: 'Invert',
@@ -67,7 +73,8 @@ const Filters = [
             min: 0,
             max: 100
         },
-        unit: '%'
+        unit: '%',
+        step: 1
     },
     {
         name: 'Blur',
@@ -77,7 +84,8 @@ const Filters = [
             min: 0,
             max: 20
         },
-        unit: 'px'
+        unit: 'px',
+        step: 1
     },
     {
         name: 'Opacity',
@@ -87,8 +95,9 @@ const Filters = [
             min: 0,
             max: 100
         },
-        unit: '%'
+        unit: '%',
+        step: 1
     },
 ]
 
-export default Filters;
+export default DefaultFilters;
