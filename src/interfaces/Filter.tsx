@@ -1,11 +1,12 @@
 import Range from "./Range";
 
 interface Filter {
+    type: string
     name: string
     property: string
     value: number
     range: Range
-    unit: string
+    unit?: string
     step: number
 }
 
