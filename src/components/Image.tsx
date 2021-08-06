@@ -13,7 +13,7 @@ const Image: FC = () => {
     }
 
     return (
-        <img src="../../public/img.png"
+        <img src="img.png"
              className="main-image"
              style={format(filters)}
              alt="tree" />
