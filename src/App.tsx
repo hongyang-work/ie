@@ -1,17 +1,17 @@
 import './App.css';
 
-import EditorContextProvider from "./contexts/editor/EditorContextProvider";
+import EditorContext from "./contexts/EditorContext";
 import Editor from "./components/Editor";
 import Image from "./components/Image";
 
 const App = () => {
     return (
-        <EditorContextProvider>
+        <EditorContext>
             <div className="container">
                 <Image/>
                 <Editor/>
             </div>
-        </EditorContextProvider>
+        </EditorContext>
     );
 }
 

@@ -2,7 +2,7 @@ import {FC, useContext} from "react";
 
 import Filter from "../interfaces/Filter";
 import Transformer from "../interfaces/Transformer";
-import {EditorContext} from "../contexts/editor/EditorContext";
+import {EditorContext} from "../contexts/EditorContext";
 
 
 const Image: FC = () => {

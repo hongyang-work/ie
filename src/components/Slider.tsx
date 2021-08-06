@@ -1,15 +1,15 @@
-import { FC, useContext } from "react";
+import {FC, useContext} from "react";
 
 import ChangeAgent from "../interfaces/ChangeAgent";
-import { EditorContext } from "../contexts/editor/EditorContext";
+import {EditorContext} from "../contexts/EditorContext";
 
 interface Props {
     agent: ChangeAgent
 }
 
-const Slider: FC<Props> = ({ agent }) => {
+const Slider: FC<Props> = ({agent}) => {
 
-    const { handleChange } = useContext(EditorContext);
+    const {handleChange} = useContext(EditorContext);
 
     return (
         <div className='slider-container'>

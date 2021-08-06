@@ -1,7 +1,7 @@
 import {useContext} from "react";
 
 import Slider from "./Slider";
-import {EditorContext} from "../contexts/editor/EditorContext";
+import {EditorContext} from "../contexts/EditorContext";
 import {FILTER, TRANSFORMER} from "../types/EditorType";
 
 

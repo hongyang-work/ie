@@ -1,12 +1,15 @@
-import {FC, ChangeEvent, useState} from "react";
+import {FC, ChangeEvent, useState, createContext} from "react";
 
-import Filter from "../../interfaces/Filter";
-import Transformer from "../../interfaces/Transformer";
-import ChangeAgent from "../../interfaces/ChangeAgent";
-import DefaultFilters from "../../defaults/DefaultFilters";
-import DefaultTransformers from "../../defaults/DefaultTransformers";
-import {EditorContext} from "./EditorContext";
-import {FILTER, TRANSFORMER} from "../../types/EditorType";
+import Context from "../interfaces/Context";
+import Filter from "../interfaces/Filter";
+import Transformer from "../interfaces/Transformer";
+import ChangeAgent from "../interfaces/ChangeAgent";
+import DefaultContext from "../defaults/DefaultContext";
+import DefaultFilters from "../defaults/DefaultFilters";
+import DefaultTransformers from "../defaults/DefaultTransformers";
+import {FILTER, TRANSFORMER} from "../types/EditorType";
+
+export const EditorContext = createContext<Context>(DefaultContext);
 
 const EditorContextProvider: FC = ({children}) => {
 
@@ -40,4 +43,4 @@ const EditorContextProvider: FC = ({children}) => {
     )
 }
 
-export default EditorContextProvider
+export default EditorContextProvider;
