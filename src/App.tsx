@@ -8,8 +8,8 @@ const App = () => {
     return (
         <EditorContextProvider>
             <div className="container">
-                <Image />
-                <Editor />
+                <Image/>
+                <Editor/>
             </div>
         </EditorContextProvider>
     );
