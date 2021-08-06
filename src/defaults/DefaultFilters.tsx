@@ -7,6 +7,15 @@ const DefaultFilters = {
             max: 100
         },
         unit: "%"
+    },
+    sepia: {
+        name: 'Sepia',
+        value: 100,
+        range: {
+            min: 0,
+            max: 100
+        },
+        unit: '%'
     }
 }
 
