@@ -1,21 +1,12 @@
-import {FC} from "react";
-import {Filter} from "../interface";
+import { FC } from "react";
 
 interface Props {
-    filters: Record<string, Filter>
+    style: object
 }
 
-const Image: FC<Props> = ({ filters }) => {
-
-    const formatFilters = (filters: Record<string, Filter>) => {
-        const mapped = Object.keys(filters).map(key => `${key}(${filters[key].value}${filters[key].unit})`);
-        return { filter: mapped.join(' ') }
-    }
-
+const Image: FC<Props> = ({ style }) => {
     return (
-        <div>
-            <div className="main-image" style={formatFilters(filters)}/>
-        </div>
+        <div className="main-image" style={style}/>
     )
 }
 

@@ -10,6 +10,7 @@ export interface Range {
 
 export interface Filter {
     name: string
+    property: string
     value: number
     range: Range
     unit: string
