@@ -8,7 +8,7 @@ const Editor = () => {
     useEffect(() => {updateMessage("in editor");})
 
     return (
-        <div>{message}</div>
+        <div className="editor">{message}</div>
     )
 }
 
