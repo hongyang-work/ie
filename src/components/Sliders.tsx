@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import Slider from "./Slider";
 
+import Slider from "./Slider";
 import { AppContext } from "../contexts/image-editor/AppContext";
 
 
