@@ -11,11 +11,13 @@ const Editor = () => {
 
     return (
         <div className="sidebar">
+            <div>{FILTER}</div>
             {
                 filters.map(filter => (
                     <Slider key={filter.property} agent={{editor: filter, type: FILTER}}/>
                 ))
             }
+            <div>{TRANSFORMER}</div>
             {
                 transformers.map(transformer => (
                     <Slider key={transformer.property} agent={{editor: transformer, type: TRANSFORMER}}/>
