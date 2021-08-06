@@ -16,8 +16,6 @@ body {
 
 .main-image {
     grid-area: image;
-    width: 50%;
-    height: 50%;
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;

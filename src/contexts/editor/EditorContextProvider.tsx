@@ -1,12 +1,12 @@
 import { FC, ChangeEvent, useState} from "react";
 
 import Filter from "../../interfaces/Filter";
-import DefaultFilters from "../../defaults/DefaultFilters";
+import Filters from "../../defaults/Filters";
 import { EditorContext } from "./EditorContext";
 
 const EditorContextProvider: FC = ({ children }) => {
 
-    const [filters, setFilters] = useState<Filter[]>(DefaultFilters);
+    const [filters, setFilters] = useState<Filter[]>(Filters);
 
     const handleChange = (newFilter: Filter, e : ChangeEvent<HTMLInputElement>) => {
         const updatedFilters = filters.map(filter => {
