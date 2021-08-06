@@ -1,13 +1,8 @@
-import Range from "./Range";
+import Editor from "./Editor";
 
-interface Transformer {
+interface Transformer extends Editor {
     type: string
-    name: string
-    property: string
-    value: number
-    range: Range
     unit?: string
-    step: number
 }
 
 export default Transformer;
