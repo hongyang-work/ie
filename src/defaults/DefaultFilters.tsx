@@ -21,4 +21,4 @@ const DefaultFilters = [
     }
 ]
 
-export default DefaultFilters
+export default DefaultFilters;

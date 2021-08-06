@@ -1,12 +1,12 @@
 import { useContext } from "react";
 
 import Slider from "./Slider";
-import { AppContext } from "../contexts/image-editor/AppContext";
+import { EditorContext } from "../contexts/editor/EditorContext";
 
 
 const Sliders = () => {
 
-    const { filters } = useContext(AppContext);
+    const { filters } = useContext(EditorContext);
 
     return (
         <div className="sidebar">

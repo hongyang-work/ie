@@ -1,7 +1,7 @@
 import { FC, useContext } from "react";
 
-import { AppContext } from "../contexts/image-editor/AppContext";
-import { Filter } from "../interface";
+import Filter from "../interfaces/Filter";
+import { EditorContext } from "../contexts/editor/EditorContext";
 
 interface Props {
     filter: Filter
@@ -9,7 +9,7 @@ interface Props {
 
 const Slider: FC<Props> = ({ filter }) => {
 
-    const { handleChange } = useContext(AppContext);
+    const { handleChange } = useContext(EditorContext);
 
     return (
         <div className='slider-container'>

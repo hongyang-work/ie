@@ -1,17 +1,17 @@
 import './App.css';
 
-import AppContextProvider from "./contexts/image-editor/AppContextProvider";
+import EditorContextProvider from "./contexts/editor/EditorContextProvider";
 import Sliders from "./components/Sliders";
 import Image from "./components/Image";
 
 const App = () => {
     return (
-        <AppContextProvider>
+        <EditorContextProvider>
             <div className="container">
                 <Image />
                 <Sliders />
             </div>
-        </AppContextProvider>
+        </EditorContextProvider>
     );
 }
 

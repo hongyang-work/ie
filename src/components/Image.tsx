@@ -1,12 +1,22 @@
 import { FC, useContext } from "react";
-import { AppContext } from "../contexts/image-editor/AppContext";
+
+import Filter from "../interfaces/Filter";
+import { EditorContext } from "../contexts/editor/EditorContext";
 
 const Image: FC = () => {
 
-    const { style } = useContext(AppContext);
+    const { filters } = useContext(EditorContext);
+
+    const format = (filters: Filter[]) => {
+        const mapped = filters.map(filter => `${filter.property}(${filter.value}${filter.unit})`);
+        return { filter: mapped.join(' ') }
+    }
 
     return (
-        <div className="main-image" style={style}/>
+        <img src="../../public/img.png"
+             className="main-image"
+             style={format(filters)}
+             alt="tree" />
     )
 }
 
